@@ -22,6 +22,10 @@ Details scraped include: product name, product price, product description and se
 The output generated is a csv file. You can use it to filter the search results in ways that suit your needs. (filters which may not be offered by carousell app, e.g. sort by user name)
 
 ## To use:
+Create a config.py file and put your carousell username and password details as follows:
+username = \<YOUR USERNAME\>
+password = \<YOUR PASSWORD\>
+
 python mylikes_scrape.py --num \<num of listings\>
 
 python product_search.py --search_query \<your search query\> --num \<num of listings\>
