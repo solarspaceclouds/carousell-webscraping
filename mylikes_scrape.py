@@ -1,17 +1,20 @@
 from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
 from selenium.webdriver import ActionChains
 import csv
 import time
-import re
 from selenium.webdriver.common.by import By
-import pandas as pd
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from config import username, password
-
+import argparse
 
 def main():
+    parser = argparse.ArgumentParser(
+                    prog='ProgramName',
+                    description='What the program does',
+                    epilog='Text at the bottom of help')
+    parser.add_argumnet('num', type=int)
+    args = parser.parse_args()
 	
     driver = webdriver.Chrome()
 
@@ -39,7 +42,7 @@ def main():
     time.sleep(2)
     # We want to start the first two pages.
     # If everything works, we will change it to while True
-    while index <=8:
+    while index <=args.num:
         try:
             index = index + 1
             print("Scraping chunk number " + str(index))
