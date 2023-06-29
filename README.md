@@ -23,7 +23,9 @@ The output generated is a csv file. You can use it to filter the search results 
 
 ## To use:
 Create a config.py file and put your carousell username and password details as follows:
+
 username = \<YOUR USERNAME\>
+
 password = \<YOUR PASSWORD\>
 
 python mylikes_scrape.py --num \<num of listings\>
