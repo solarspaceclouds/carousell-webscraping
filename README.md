@@ -28,6 +28,9 @@ username = \<YOUR USERNAME\>
 
 password = \<YOUR PASSWORD\>
 
+
+Then run the relevant command:
+
 python mylikes_scrape.py --num \<num of listings\>
 
 python product_search.py --search_query \<your search query\> --num \<num of listings\>
