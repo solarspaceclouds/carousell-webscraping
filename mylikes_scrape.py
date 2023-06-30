@@ -13,7 +13,7 @@ def main():
                     prog='ProgramName',
                     description='What the program does',
                     epilog='Text at the bottom of help')
-    parser.add_argumnet('num', type=int)
+    parser.add_argument('num', type=int)
     args = parser.parse_args()
 	
     driver = webdriver.Chrome()

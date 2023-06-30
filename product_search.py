@@ -18,7 +18,7 @@ def main():
                     epilog='Text at the bottom of help')
 	
 	parser.add_argument('search_query',type=str)
-	parser.add_argumnet('num', type=int)
+	parser.add_argument('num', type=int)
 	args = parser.parse_args()
  
 	search_query = args.search_query
